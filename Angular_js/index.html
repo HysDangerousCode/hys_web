@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="">
+	<head>
+		<meta charset="utf-8"/>
+		<link rel="icon" href="favicon.ico"/>
+		<title>我的工具</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script src="https://cdn.bootcss.com/angular.js/1.6.4/angular.js"></script>
+		<script>
+			document.getElementById("txt_box");
+		</script>
+	</head>
+	<body>
+		<div class="wapper">
+			<input type="text" name="" id="" value="" ng-model="a"/>
+			<div id="txt_box" ng-bind="a"></div>
+		</div>
+		<div class="white">
+			<input type="number" ng-model="price"/>
+			<input type="number" ng-model="num"/>
+			<div class="jg">总价：{{price*num}}</div>
+		</div>
+		<div class="wh_calculator">
+			<input type="number" ng-model="width"/>
+			<input type="number" ng-model="height"/>
+			<div class="wh">总大小：{{width*height}}px</div>
+		</div>
+	</body>
+</html>
